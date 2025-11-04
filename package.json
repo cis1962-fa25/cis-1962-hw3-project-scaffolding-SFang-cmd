@@ -2,10 +2,20 @@
   "name": "pizza-validator",
   "version": "1.0.0",
   "description": "Pizza validator to make sure an object is indeed a pizza",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "pizza-validator": "dist/cli.js"
   },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test": "jest",
+    "lint": "eslint \"src/**/*.ts\"",
+    "format": "prettier --write src/**/* .ts"
+  },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cis1962-fa25/cis-1962-hw3-project-scaffolding-SFang-cmd.git"
