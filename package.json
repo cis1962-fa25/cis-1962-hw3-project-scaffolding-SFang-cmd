@@ -1,6 +1,6 @@
 {
   "name": "pizza-validator",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Pizza validator to make sure an object is indeed a pizza",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
